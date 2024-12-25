@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スキンギャラリー | Minecraftスキン配布サイト</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .navbar {
+      background-color: #1a1a1a;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #3498db;
+    }
+
+    /* ギャラリーセクション */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 80px 20px;
+      margin-top: 60px;
+    }
+
+    .skin-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .skin-card:hover {
+      transform: scale(1.05);
+    }
+
+    .skin-card img {
+      width: 100%;
+      border-radius: 8px;
+      max-height: 250px;
+      object-fit: cover;
+    }
+
+    .skin-card h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    .btn-primary {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #2980b9;
+    }
+
+    /* フッター */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* レスポンシブデザイン */
+    @media (max-width: 768px) {
+      .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">Minecraftスキン配布</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="gallery.html">ギャラリー</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="gallery">
+      <div class="skin-card">
+        <img src="imp/1f.png" alt="Fortnite OG free pack">
+        <h3>Fortnite OG free pack</h3>
+        <a href="skin1-details.html" class="btn-primary">詳細を見る</a>
+      </div>
+      <div class="skin-card">
+        <img src="skin2-details.html" alt="スキン2">
+        <h3>スキン2</h3>
+        <a href="skin2-details.html" class="btn-primary">詳細を見る</a>
+      </div>
+      <div class="skin-card">
+        <img src="skin3-thumbnail.jpg" alt="スキン3">
+        <h3>スキン3</h3>
+        <a href="skin3.html" class="btn-primary">詳細を見る</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Minecraftスキン配布サイト</p>
+  </footer>
+
+</body>
+</html>

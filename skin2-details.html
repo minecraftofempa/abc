@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スキン2の詳細</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">Minecraftスキン配布</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="gallery.html">ギャラリー</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="skin-detail">
+      <div class="skin-image">
+        <img src="skin2.png" alt="スキン2">
+      </div>
+      <div class="skin-description">
+        <h2>スキン2</h2>
+        <p>このスキンは有料です。パスワードを入力してダウンロードしてください。</p>
+        <button class="download-btn paid" onclick="showPasswordPrompt()">パスワードを入力</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Minecraftスキン配布サイト</p>
+  </footer>
+
+  <div id="password-modal" class="password-modal">
+    <div class="modal-content">
+      <h3>パスワードを入力してください</h3>
+      <input type="password" id="password-input" placeholder="パスワード">
+      <button onclick="checkPassword()">ダウンロード</button>
+      <button onclick="closePasswordPrompt()">閉じる</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
